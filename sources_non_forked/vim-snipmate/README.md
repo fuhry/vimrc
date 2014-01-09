@@ -17,8 +17,10 @@ Garbas][garbas], [Marc Weber][marcweber], and [Adnan Zafar][ajzafar].
 
 ## Installing SnipMate ##
 
-SnipMate depends on [vim-addon-mw-utils][mw-utils] and [tlib][tlib]. We
-recommend one of the following ways of installing all three.
+We recommend one of the following methods for installing SnipMate and its
+dependencies. SnipMate depends on [vim-addon-mw-utils][mw-utils] and
+[tlib][tlib]. Since SnipMate does not ship with any snippets, we suggest
+looking at the [vim-snippets][vim-snippets] repository.
 
 * Using [Pathogen][pathogen], run the following commands:
 
@@ -26,6 +28,9 @@ recommend one of the following ways of installing all three.
         % git clone https://github.com/tomtom/tlib_vim.git
         % git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
         % git clone https://github.com/garbas/vim-snipmate.git
+
+        # Optional:
+        % git clone https://github.com/honza/vim-snippets.git
 
 * Using [VAM][vam], add `vim-snippets` to the list of packages to be installed.
 
@@ -36,9 +41,21 @@ recommend one of the following ways of installing all three.
         Bundle "tomtom/tlib_vim"
         Bundle "garbas/vim-snipmate"
 
-Lastly, since SnipMate does not ship with any snippets, we suggest looking at
-the [vim-snippets][vim-snippets] repository.
+        " Optional:
+        Bundle "honza/vim-snippets"
 
+## Release Notes ##
+
+### 0.87 - 2014-01-04 ###
+
+* Stop indenting empty lines when expanding snippets
+* Support extends keyword in .snippets files
+* Fix visual placeholder support
+* Add zero tabstop support
+* Support negative 'softtabstop'
+* Add g:snipMate_no_default_aliases option
+* Add <Plug>snipMateTrigger for triggering an expansion inside a snippet
+* Add snipMate#CanBeTriggered() function
 
 [ultisnips]: https://github.com/sirver/ultisnips
 [msanders]: https://github.com/msanders
