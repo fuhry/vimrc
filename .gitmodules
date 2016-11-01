@@ -1,0 +1,3 @@
+[submodule "sources_non_forked/puppet-syntax-vim"]
+	path = sources_non_forked/puppet-syntax-vim
+	url = git@github.com:puppetlabs/puppet-syntax-vim.git
